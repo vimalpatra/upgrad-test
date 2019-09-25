@@ -1,0 +1,30 @@
+<h1 id="heading">Crazy Case Conversion</h1>
+<h6 >Type and Press Enter</h6>
+
+<form #form="ngForm">
+  <input #text [(ngModel)]="text.value" (keyup.enter)="printValues(form.value)" name="text" id="input" type="text">
+
+  <div>
+    <p>
+      <input #case [(ngModel)]="case.value" type="radio" name="crazy" value="crazy" id="crazy">
+      <label for="crazy">Convert to Crazy Case</label>
+
+    <br>
+
+      <input #case_ [(ngModel)]="case_.value" type="radio" name="crazy" value="notcrazy" id="notcrazy">
+      <label for="notcrazy">Keep the original string</label>
+    </p>
+
+  </div>
+
+  <div >
+    <label *ngIf="crazyText" id="crazyCase">
+      Converted Output of the Text in crazy case is "{{ crazyText }}"
+    </label>
+
+    <label *ngIf="normalText" id="normalCase">
+      Original string is "{{ normalText }}"
+    </label>
+  </div>
+
+</form>

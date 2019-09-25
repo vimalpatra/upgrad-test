@@ -1,0 +1,12 @@
+<h1 id="heading">Web accessibility</h1>
+
+<div>
+    <button (click)="toggleFontSize(1)">Increase Font</button>
+    <button (click)="toggleFontSize(-1)">Decrease Font</button>
+    <button (click)="toggleHighContrast(true)">Turn on High Contrast</button>
+    <button (click)="toggleHighContrast(false)">Turn off High Contrast</button>
+</div>
+
+<div #content id="content" [ngClass]="{ 'highContrast': highContrast }">
+    Web accessibility refers to the inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities. When sites are correctly designed, developed and edited, all users have equal access to information and functionality.
+</div>

@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Lato;
+    margin-top: 20px;
+  }
+  
+  button{
+    background: white;
+    margin: 20px 10px;
+    padding: 5px 10px;
+    font-size: .7rem;
+    border: 2px solid rgb(180,180,180);
+    border-radius: 5px;
+    box-shadow: 0 5px 20px -3px rgba(0,0,0,.2);
+  }
+  
+  #content{
+    background: white;
+    padding: 20px 50px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    margin-top: 20px;
+  }
+  
+  #content.highContrast{
+    color: white;
+    background: black;
+  }
+  
